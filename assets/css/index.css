@@ -29,7 +29,8 @@ body {
 header {
     background-color: lightcoral;
     display: flex; /* Added flex to parent element */
-    justify-content: center; /* Center the content horizontally */
+    align-items: center;        /* Vertically center items */
+    justify-content: space-between; /* Space out children: spacer, h1, nav */
 }
 
 h1 {
@@ -39,9 +40,20 @@ h1 {
     margin: 0; /* Remove default margin */
 }
 
+p {
+    font-family: 'exo', sans-serif;
+}
+
 header a {
     color: inherit; /* Removes blue color */
     text-decoration: none; /* Removes underline */
+    justify-content: center; /* Center the link */
+}
+
+/* Navigation */
+nav {
+    background-color: lightgreen;
+    text-align: right; /* Aligns nav items to the right */
 }
 
 /* Main content */
