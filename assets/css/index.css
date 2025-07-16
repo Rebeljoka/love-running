@@ -8,137 +8,136 @@
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+  box-sizing: border-box; /* Set box-sizing to border-box for all elements */
 }
 
 /* General styles */
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* Generic project styles */
-  color: #3a3a3a;
-  font-family: "Lato", sans-serif;
+  min-height: 100vh; /* Ensure body takes up at least full viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  color: #3a3a3a; /* Default text color */
+  font-family: 'Maven Pro', sans-serif ; /* Set default font family */
 }
 
 /* Header */
 header {
-  background-color: #ffffff;
-  padding: 0 1rem;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  background-color: #ffffff; /* White background for header */
+  padding: 0 1rem; /* Padding for header */
+  position: fixed; /* Fixed position to keep header at the top */
+  z-index: 99; /* Ensure header is above other content */
+  width: 100%; /* Full width header */
+  box-shadow: 0 2px 2px #3a3a3a; /* Subtle shadow for depth */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: baseline; /* Align items to baseline for better alignment */
 }
 
 header a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
+  font-family: 'Permanent Marker', cursive; /* Use custom font for headings */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Letter spacing for headings */
+  color: #252525; /* Dark color for headings */
 }
 
 #menu {
-  font-size: 110%;
-  letter-spacing: 4px;
-  list-style-type: none;
+  font-size: 110%; /* Slightly larger font size for menu */
+  letter-spacing: 4px; /* Increased letter spacing for menu */
+  list-style-type: none; /* Remove default list style */
 }
 
 #menu > li {
-  margin-bottom: 1em;
+  margin-bottom: 1em; /* Margin between menu items */
 }
 
 .active {
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a; /* Underline for active menu item */
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
-  left: 0;
-  padding: 0 1rem;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: none;
-  top: 100%;
+  position: absolute; /* Absolute position for dropdown */
+  background-color: #ffffff; /* White background for dropdown */
+  width: 100%; /* Full width dropdown */
+  left: 0; /* Align dropdown to left */
+  padding: 0 1rem; /* Padding for dropdown */
+  box-shadow: 0 2px 2px #3a3a3a; /* Shadow for dropdown */
+  display: none; /* Hide dropdown by default */
+  top: 100%; /* Position dropdown below header */
 }
 
 /* Nav toggle */
 #nav-toggle:checked ~ nav {
-  display: block;
+  display: block; /* Show dropdown when toggle is checked */
 }
 
 #nav-toggle {
-  display: none;
+  display: none; /* Hide the checkbox input */
 }
 
 .nav-toggle-label {
-  font-size: 2rem;
+  font-size: 2rem; /* Font size for toggle label */
 }
 
 /* Main content */
 main {
-  background-color: lightblue;
+  background-color: lightblue; /* Light blue background for main content */
   /* Make main element take up any surplus space to push footer down */
-  flex: 1 0 auto;
-  margin-top: 47px;
+  flex: 1 0 auto; /* Allow main to grow and shrink */
+  margin-top: 47px; /* Push main content down to accommodate header */
 }
 
 /* Footer */
 footer {
-  background-color: orange;
+  background-color: orange; /* Orange background for footer */
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
   nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
+    display: block; /* Show dropdown on larger screens */
+    position: relative; /* Relative position for dropdown */
+    box-shadow: none; /* Remove shadow for larger screens */
+    width: fit-content; /* Fit content width */
+    padding-right: 1rem; /* Padding for dropdown */
   }
 
   #menu {
-    display: flex;
+    display: flex; /* Use flexbox for menu layout */
   }
 
   #menu > li {
-    padding-left: 1rem;
+    padding-left: 1rem; /* Padding for menu items */
   }
 
   .nav-toggle-label {
-    display: none;
+    display: none; /* Hide toggle label on larger screens */
   }
 
   #logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin: 0 0.5rem;
+    font-size: 280%; /* Increase logo size on larger screens */
+    line-height: 75px; /* Adjust line height for larger logo */
+    margin: 0 0.5rem; /* Margin for logo */
   }
 
   /* Main content */
   main {
     /* Push main content down to accommodate larger header */
-    margin-top: 79px;
+    margin-top: 79px; /* Adjust margin for larger header */
   }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a; /* Underline on hover for menu links */
   }
 }
