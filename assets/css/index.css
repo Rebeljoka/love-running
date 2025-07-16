@@ -2,9 +2,9 @@
 /* Headings */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 /* Subheadings */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 /* Paragraphs */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Permanent+Marker&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -30,32 +30,44 @@ header {
     background-color: #ffffff; /* White background */
     display: flex; /* Added flex to parent element */
     align-items: center;        /* Vertically center items */
-    justify-content: space-between; /* Space out children: spacer, h1, nav */
+    justify-content:  space-between; /* Space between items */
+    position: relative;      /* Needed for absolute positioning of h1 */
+    height: 70px;            /* Set a fixed height for header */
     z-index: 99; /* Ensure header is above other content */
     box-shadow: 0 2px 2px #3a3a3a; /* Add shadow to header */
+    position: relative; /* Needed for absolute positioning of h1 */
 }
 
-h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2.5rem;
-    color: white;
+#logo {
+    font-family: 'Permanent Marker', cursive; /* Use 'Permanent Marker' font for logo */
+    font-size: 2.5rem; /* Larger font size for logo */
+    color: #3a3a3a; /* Logo color */
+    width: max-content; /* Allow logo to take up only as much space as needed */
     margin: 0; /* Remove default margin */
 }
 
-p {
-    font-family: 'exo', sans-serif;
+h1 {
+    font-family: 'Permanent Marker', cursive; /* Use 'Permanent Marker' font for h1 */
 }
 
-header a {
-    color: inherit; /* Removes blue color */
-    text-decoration: none; /* Removes underline */
-    justify-content: center; /* Center the link */
+h2 h3 h4 h5 h6 {
+    font-family: 'exo' sans-serif; /* Use 'exo' font for all headings */
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif; /* Use 'Maven Pro' font for paragraphs */
+}
+
+header > a {
+    margin: 0 auto; /* Auto margins center the logo link in flex */
+    text-decoration: none; /* Remove underline from logo link */
+    color: inherit;        /* Inherit text color */
 }
 
 /* Navigation */
 nav {
     background-color: lightgreen;
-    text-align: right; /* Aligns nav items to the right */
+    text-align: right;
 }
 
 /* Main content */
