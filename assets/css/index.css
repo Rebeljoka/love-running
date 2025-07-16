@@ -1,9 +1,9 @@
 /* Google fonts import */
-/* Heading */
+/* Headings */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-/* Subheading */
+/* Subheadings */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Walter+Turncoat&display=swap');
-/* Paragraphs 1*/
+/* Paragraphs */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Permanent+Marker&family=Walter+Turncoat&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -20,6 +20,8 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
+    /*Google Fonts*/
+    font-family: 'Maven Pro', sans-serif;
 }
 
 
