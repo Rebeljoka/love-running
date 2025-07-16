@@ -27,10 +27,12 @@ body {
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff; /* White background */
     display: flex; /* Added flex to parent element */
     align-items: center;        /* Vertically center items */
     justify-content: space-between; /* Space out children: spacer, h1, nav */
+    z-index: 99; /* Ensure header is above other content */
+    box-shadow: 0 2px 2px #3a3a3a; /* Add shadow to header */
 }
 
 h1 {
