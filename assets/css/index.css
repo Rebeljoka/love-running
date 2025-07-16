@@ -48,6 +48,7 @@ header {
 
 h1 {
     font-family: 'Permanent Marker', cursive; /* Use 'Permanent Marker' font for h1 */
+    text-transform: uppercase; /* Uppercase text for h1 */
 }
 
 h2 h3 h4 h5 h6 {
@@ -66,8 +67,16 @@ header > a {
 
 /* Navigation */
 nav {
-    background-color: lightgreen;
-    text-align: right;
+    text-align: right; /* Align navigation links to the right */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from logo link */
+    color: inherit;        /* Inherit text color */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from list */
 }
 
 /* Main content */
