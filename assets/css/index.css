@@ -28,6 +28,20 @@ body {
 /* Header */
 header {
     background-color: lightcoral;
+    display: flex; /* Added flex to parent element */
+    justify-content: center; /* Center the content horizontally */
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0; /* Remove default margin */
+}
+
+header a {
+    color: inherit; /* Removes blue color */
+    text-decoration: none; /* Removes underline */
 }
 
 /* Main content */
