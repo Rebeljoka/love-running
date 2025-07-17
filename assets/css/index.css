@@ -2,7 +2,7 @@
 /* Headings */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /* Subheadings */
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap");
 /* Paragraphs */
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 
@@ -20,6 +20,14 @@ body {
   flex-direction: column; /* Stack elements vertically */
   color: #3a3a3a; /* Default text color */
   font-family: "Maven Pro", sans-serif; /* Set default font family */
+}
+
+h2,
+h3 {
+  font-family: "Podkova", serif; /* Use custom font for subheadings */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 /* Header */
@@ -88,10 +96,34 @@ nav {
 
 /* Main content */
 main {
-  background-color: lightblue; /* Light blue background for main content */
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto; /* Allow main to grow and shrink */
   margin-top: 47px; /* Push main content down to accommodate header */
+}
+
+/* Hero section */
+#hero {
+  height: 600px; /* Height of hero section */
+  width: 100%; /* Full width hero section */
+  background: url("../images/hero-image.webp") no-repeat center center/cover; /* Background image for hero section */
+  position: relative; /* Relative position for cover text */
+}
+
+#cover-text {
+  /* Final rgba value sets the opacity so it is semi-transparent */
+  background-color: rgba(241,109,107,0.7); /* Semi-transparent background for cover text */
+  font-size: 130%; /* Font size for cover text */
+  position: absolute; /* Absolute position for cover text */
+  bottom: 30px; /* Position cover text at the bottom */
+  width: 80%; /* Width of cover text */
+  min-height: 200px; /* Minimum height for cover text */
+  padding-top: 40px; /* Padding for cover text */
+  padding-left: 10px; /* Padding for cover text */
+}
+
+#cover-text > h2,
+#cover-text > h3 {
+  color: #ffffff; /* White text for cover text */
 }
 
 /* Footer */
@@ -104,9 +136,9 @@ main {
 }
 
 #social-networks i {
-  font-size: 160%;
-  padding: 5%;
-  color: #3a3a3a;
+  font-size: 160%; /* Font size for social icons */
+  padding: 5%; /* Padding for social icons */
+  color: #3a3a3a; /* Color for social icons */
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -114,10 +146,10 @@ main {
   /* Header */
   nav {
     display: block; /* Show dropdown on larger screens */
-    position: relative; /* Relative position for dropdown */
+    position: relative; /* Relative position for larger screens */
     box-shadow: none; /* Remove shadow for larger screens */
-    width: fit-content; /* Fit content width */
-    padding-right: 1rem; /* Padding for dropdown */
+    width: fit-content; /* Fit width to content */
+    padding-right: 1rem; /* Adjust padding for larger screens */
   }
 
   #menu {
@@ -133,15 +165,21 @@ main {
   }
 
   #logo {
-    font-size: 280%; /* Increase logo size on larger screens */
-    line-height: 75px; /* Adjust line height for larger logo */
-    margin: 0 0.5rem; /* Margin for logo */
+    font-size: 280%; /* Adjusted font size for larger header */
+    line-height: 75px; /* Adjusted line height for larger header */
+    margin: 0 0.5rem; /* Adjusted margin for larger header */
   }
 
   /* Main content */
   main {
     /* Push main content down to accommodate larger header */
-    margin-top: 79px; /* Adjust margin for larger header */
+    margin-top: 79px; /* Adjusted margin for larger header */
+  }
+
+  /* Hero image */
+  #cover-text {
+    width: 300px; /* Set width for cover text */
+    right: 50px; /* Position cover text to the right */
   }
 }
 
