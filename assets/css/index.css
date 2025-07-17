@@ -19,7 +19,7 @@ body {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack elements vertically */
   color: #3a3a3a; /* Default text color */
-  font-family: 'Maven Pro', sans-serif ; /* Set default font family */
+  font-family: "Maven Pro", sans-serif; /* Set default font family */
 }
 
 /* Header */
@@ -41,7 +41,7 @@ header a {
 }
 
 h1 {
-  font-family: 'Permanent Marker', cursive; /* Use custom font for headings */
+  font-family: "Permanent Marker", cursive; /* Use custom font for headings */
   text-transform: uppercase; /* Uppercase text */
   letter-spacing: 2px; /* Letter spacing for headings */
   color: #252525; /* Dark color for headings */
@@ -95,8 +95,18 @@ main {
 }
 
 /* Footer */
-footer {
-  background-color: orange; /* Orange background for footer */
+#social-networks {
+  text-align: center; /* Center align social networks */
+  padding: 20px 0; /* Padding for footer */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-evenly; /* Evenly space social icons */
+  list-style-type: none; /* Remove default list style */
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
