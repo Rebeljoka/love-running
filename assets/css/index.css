@@ -104,6 +104,9 @@ main {
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto; /* Allow main to grow and shrink */
   margin-top: 47px; /* Push main content down to accommodate header height */
+  /* Enable flex properties for child elements */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack child elements vertically */
 }
 
 /* Hero section */
