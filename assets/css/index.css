@@ -198,6 +198,17 @@ main {
     color: #fafafa; /* Heading color for times section */
 }
 
+
+/* Gallery page */
+#photos img {
+    width: 100%; /* Full width for images */
+    line-height: 1em; /* Line height for images */
+}
+
+#photos {
+    line-height: 0; /* Reset line height for gallery */
+}
+
 /* Footer */
 #social-networks {
   text-align: center; /* Center the social icons */
@@ -211,6 +222,14 @@ main {
   font-size: 160%; /* Icon size */
   padding: 5%; /* Padding around icons */
   color: #3a3a3a; /* Default icon color */
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2; /* Two columns for gallery */
+        column-gap: 0; /* No gap between columns */
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
