@@ -20,18 +20,19 @@ body {
   flex-direction: column; /* Flexbox for layout */
   /* Generic project styles */
   color: #3a3a3a; /* Default text color */
-  font-family: 'Maven Pro', sans-serif; /* Font for paragraphs */
+  font-family: "Maven Pro", sans-serif; /* Font for paragraphs */
 }
 
 h1 {
-    font-family: 'Permanent Marker', cursive; /* Font for main headings */
-    text-transform: uppercase; /* Transform text to uppercase */
-    letter-spacing: 2px; /* Spacing between letters */
-    color: #252525; /* Darker color for headings */
+  font-family: "Permanent Marker", cursive; /* Font for main headings */
+  text-transform: uppercase; /* Transform text to uppercase */
+  letter-spacing: 2px; /* Spacing between letters */
+  color: #252525; /* Darker color for headings */
 }
 
-h2, h3 {
-  font-family: 'Podkova', serif; /* Font for subheadings */
+h2,
+h3 {
+  font-family: "Podkova", serif; /* Font for subheadings */
   text-transform: uppercase; /* Transform text to uppercase */
   letter-spacing: 2px; /* Spacing between letters */
   color: #252525; /* Darker color for headings */
@@ -115,7 +116,12 @@ main {
 
 #cover-text {
   /* Final rgba value sets the opacity so it is semi-transparent */
-  background-color: rgba(241, 109, 107, 0.7); /* Semi-transparent background for cover text */
+  background-color: rgba(
+    241,
+    109,
+    107,
+    0.7
+  ); /* Semi-transparent background for cover text */
   font-size: 130%; /* Font size for cover text */
   position: absolute; /* Positioning the cover text */
   bottom: 30px; /* Positioning the cover text */
@@ -158,55 +164,111 @@ main {
 }
 
 #circle-cover-bg {
-    background: url('../images/reasons-image.webp') no-repeat top center / cover; /* Background image for the circle */
-    height: 90vw; /* Full height for the circle image */
-    width: 90vw; /* Full width for the circle image */
-    margin-bottom: 20px; /* Margin for spacing */
-    /* Makes the square image into a circle */
-    border-radius: 50%; /* Circle shape */
-    max-width: 300px; /* Limit size for smaller screens */
-    max-height: 300px; /* Limit size for larger screens */
+  background: url("../images/reasons-image.webp") no-repeat top center / cover; /* Background image for the circle */
+  height: 90vw; /* Full height for the circle image */
+  width: 90vw; /* Full width for the circle image */
+  margin-bottom: 20px; /* Margin for spacing */
+  /* Makes the square image into a circle */
+  border-radius: 50%; /* Circle shape */
+  max-width: 300px; /* Limit size for smaller screens */
+  max-height: 300px; /* Limit size for larger screens */
 }
 
+/* Meetup Times Section */
 #benefits-image {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center the image vertically */
-    justify-content: center; /* Center the image */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image */
 }
 
 #times {
-  background: url('../images/dublin-city.webp') no-repeat center / cover; /* Background image for times section */
+  background: url("../images/dublin-city.webp") no-repeat center / cover; /* Background image for times section */
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow items to wrap */
 }
 
 #times div {
-    color: #fafafa; /* Text color for times section */
-    background-color: rgba(0, 0, 0, .6); /* Semi-transparent background for the divs */
-    padding: 15px; /* Padding for the divs */
-    text-align: center; /* Center text in the divs */
-    /* This will not wrap on screens of less than 400px wide.
+  color: #fafafa; /* Text color for times section */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Semi-transparent background for the divs */
+  padding: 15px; /* Padding for the divs */
+  text-align: center; /* Center text in the divs */
+  /* This will not wrap on screens of less than 400px wide.
     Each div will expand to fill the available space on its row */
-    flex-basis: 200px; /* Base width for each div */
-    flex-grow: 1; /* Allow divs to grow */
-    /* Creates a grid of meetup time divs over the background image */
-    border: 2px solid white; /* Border for the divs */
+  flex-basis: 200px; /* Base width for each div */
+  flex-grow: 1; /* Allow divs to grow */
+  /* Creates a grid of meetup time divs over the background image */
+  border: 2px solid white; /* Border for the divs */
 }
 
 #times h3 {
-    /* Override the heading colour set in general styles */
-    color: #fafafa; /* Heading color for times section */
+  /* Override the heading colour set in general styles */
+  color: #fafafa; /* Heading color for times section */
 }
-
 
 /* Gallery page */
 #photos img {
-    width: 100%; /* Full width for images */
-    line-height: 1em; /* Line height for images */
+  width: 100%; /* Full width for images */
+  line-height: 1em; /* Line height for images */
 }
 
 #photos {
-    line-height: 0; /* Reset line height for gallery */
+  line-height: 0; /* Reset line height for gallery */
+}
+
+/* Form */
+#signup {
+  background-image: url("../images/signup-image.webp"); /* Background image for signup section */
+  background-size: cover; /* Cover background image */
+  background-position: 75%; /* Position background image */
+  padding: 20px 10% 0 10%; /* Padding for signup section */
+  flex-grow: 1; /* Allow signup section to grow */
+}
+
+#signup-form {
+  color: #ffffff; /* Text color for signup form */
+  background-color: rgba(
+    60,
+    60,
+    60,
+    0.6
+  ); /* Semi-transparent background for signup form */
+  padding: 30px; /* Padding for signup form */
+}
+
+#signup-form > h2 {
+  color: #fafafa; /* Heading color for signup form */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.text-input {
+  background: transparent; /* Transparent background for text input */
+  color: #fafafa; /* Text color for input */
+  width: 100%; /* Full width for text input */
+  height: 25px; /* Height for text input */
+  margin: 5px 0 20px 0; /* Margin for text input */
+  border: 1px solid #fafafa; /* Border for text input */
+  border-radius: 2px; /* Rounded corners for text input */
+  padding: 0 5px; /* Padding for text input */
+}
+
+.radio-buttons {
+  width: 100%; /* Full width for radio buttons */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between radio buttons */
+}
+
+.join-button {
+  margin-top: 20px; /* Margin for button */
+  border-radius: 2px; /* Rounded corners for button */
+  padding: 15px 32px; /* Padding for button */
+  font-size: 100%; /* Font size for button */
+  background-color: #454b1b; /* Button background color */
+  color: #fafafa; /* Button text color */
 }
 
 /* Footer */
@@ -226,10 +288,10 @@ main {
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
-    #photos {
-        column-count: 2; /* Two columns for gallery */
-        column-gap: 0; /* No gap between columns */
-    }
+  #photos {
+    column-count: 2; /* Two columns for gallery */
+    column-gap: 0; /* No gap between columns */
+  }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -272,27 +334,51 @@ main {
     width: 300px; /* Set a fixed width for the cover text */
     right: 50px; /* Positioning the cover text */
   }
-  
+
   /* Reasons section */
-  #benefits-physical, #benefits-mental {
+  #benefits-physical,
+  #benefits-mental {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
     width: 100%; /* Full width for benefits sections */
-}
+  }
 
-#benefits-physical>div, #benefits-mental>div {
+  #benefits-physical > div,
+  #benefits-mental > div {
     width: 75%; /* Set a width for the items */
-}
+  }
 
-#benefits-mental>div {
+  #benefits-mental > div {
     text-align: end; /* Align text to the end */
     align-self: flex-end; /* Align self to the end */
-}
+  }
 
-/* Gallery */
-    #photos {
-        column-count: 3; /* Three columns for gallery */
-    }
+  /* Gallery */
+  #photos {
+    column-count: 3; /* Three columns for gallery */
+  }
+
+  /* Form */
+  #signup {
+    background-position: center; /* Center background image */
+    position: relative; /* Relative positioning for signup section */
+  }
+
+  #signup-form {
+    max-width: 400px; /* Set a max width for the form */
+    position: absolute; /* Absolute positioning for the form */
+    left: 10%; /* Positioning the form */
+    top: 150px; /* Positioning the form */
+  }
+
+  .text-input:hover {
+    border-color: #f16c6b; /* Change border color on hover */
+  }
+
+  .join-button:hover {
+    background-color: #fafafa; /* Change background color on hover */
+    color: #454b1b; /* Change text color on hover */
+  }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -302,35 +388,35 @@ main {
   }
 
   /* Gallery */
-    #photos {
-        column-count: 4; /* Four columns for gallery */
-    }
+  #photos {
+    column-count: 4; /* Four columns for gallery */
+  }
 }
 
-@media screen and (min-width: 1200px) {    
-    /* Reasons section */
-    #benefits {
-        display: flex; /* Use flexbox for layout */
-        flex-direction: row; /* Stack items horizontally */
-    }
-    
-    #benefits > div {
-        flex: 1; /* Allow items to grow and shrink equally */
-    }
-    
-    #benefits-image {
-        order: 0; /* Order the image to appear first */
-    }
-    
-    #benefits-mental {
-        order: 1; /* Order mental benefits to appear second */
-    }
-    
-    #benefits-mental > div {
-        align-self: flex-start; /* Align self to the start */
-    }
-    
-    #benefits-physical > div {
-        align-self: flex-end; /* Align self to the end */
-    }
+@media screen and (min-width: 1200px) {
+  /* Reasons section */
+  #benefits {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Stack items horizontally */
+  }
+
+  #benefits > div {
+    flex: 1; /* Allow items to grow and shrink equally */
+  }
+
+  #benefits-image {
+    order: 0; /* Order the image to appear first */
+  }
+
+  #benefits-mental {
+    order: 1; /* Order mental benefits to appear second */
+  }
+
+  #benefits-mental > div {
+    align-self: flex-start; /* Align self to the start */
+  }
+
+  #benefits-physical > div {
+    align-self: flex-end; /* Align self to the end */
+  }
 }
