@@ -119,12 +119,7 @@ main {
 
 #cover-text {
   /* Final rgba value sets the opacity so it is semi-transparent */
-  background-color: rgba(
-    241,
-    109,
-    107,
-    0.7
-  ); /* Semi-transparent background for cover text */
+  background-color: rgba(241, 109, 107, 0.7); /* Semi-transparent background for cover text */
   font-size: 130%; /* Font size for cover text */
   position: absolute; /* Positioning the cover text */
   bottom: 30px; /* Positioning the cover text */
@@ -192,7 +187,7 @@ main {
 
 #times div {
   color: #fafafa; /* Text color for times section */
-  background-color: rgba(0,0,0,0.6); /* Semi-transparent background for the divs */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the divs */
   padding: 15px; /* Padding for the divs */
   text-align: center; /* Center text in the divs */
   /* This will not wrap on screens of less than 400px wide.
@@ -229,12 +224,7 @@ main {
 
 #signup-form {
   color: #ffffff; /* Text color for signup form */
-  background-color: rgba(
-    60,
-    60,
-    60,
-    0.6
-  ); /* Semi-transparent background for signup form */
+  background-color: rgba(60, 60, 60, 0.6); /* Semi-transparent background for signup form */
   padding: 30px; /* Padding for signup form */
 }
 
