@@ -192,12 +192,7 @@ main {
 
 #times div {
   color: #fafafa; /* Text color for times section */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.6
-  ); /* Semi-transparent background for the divs */
+  background-color: rgba(0,0,0,0.6); /* Semi-transparent background for the divs */
   padding: 15px; /* Padding for the divs */
   text-align: center; /* Center text in the divs */
   /* This will not wrap on screens of less than 400px wide.
