@@ -153,6 +153,23 @@ main {
   margin: 5px 0; /* Spacing for horizontal rule */
 }
 
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover; /* Background image for the circle */
+    height: 90vw; /* Full height for the circle image */
+    width: 90vw; /* Full width for the circle image */
+    margin-bottom: 20px; /* Margin for spacing */
+    /* Makes the square image into a circle */
+    border-radius: 50%; /* Circle shape */
+    max-width: 300px; /* Limit size for smaller screens */
+    max-height: 300px; /* Limit size for larger screens */
+}
+
+#benefits-image {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image */
+}
+
 /* Footer */
 #social-networks {
   text-align: center; /* Center the social icons */
@@ -208,6 +225,22 @@ main {
     width: 300px; /* Set a fixed width for the cover text */
     right: 50px; /* Positioning the cover text */
   }
+  
+  /* Reasons section */
+  #benefits-physical, #benefits-mental {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for benefits sections */
+}
+
+#benefits-physical>div, #benefits-mental>div {
+    width: 75%; /* Set a width for the items */
+}
+
+#benefits-mental>div {
+    text-align: end; /* Align text to the end */
+    align-self: flex-end; /* Align self to the end */
+}
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -215,4 +248,32 @@ main {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a; /* Add underline on hover */
   }
+}
+
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #benefits {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Stack items horizontally */
+    }
+    
+    #benefits > div {
+        flex: 1; /* Allow items to grow and shrink equally */
+    }
+    
+    #benefits-image {
+        order: 0; /* Order the image to appear first */
+    }
+    
+    #benefits-mental {
+        order: 1; /* Order mental benefits to appear second */
+    }
+    
+    #benefits-mental > div {
+        align-self: flex-start; /* Align self to the start */
+    }
+    
+    #benefits-physical > div {
+        align-self: flex-end; /* Align self to the end */
+    }
 }
