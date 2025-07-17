@@ -288,6 +288,11 @@ main {
     text-align: end; /* Align text to the end */
     align-self: flex-end; /* Align self to the end */
 }
+
+/* Gallery */
+    #photos {
+        column-count: 3; /* Three columns for gallery */
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -295,6 +300,11 @@ main {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a; /* Add underline on hover */
   }
+
+  /* Gallery */
+    #photos {
+        column-count: 4; /* Four columns for gallery */
+    }
 }
 
 @media screen and (min-width: 1200px) {    
